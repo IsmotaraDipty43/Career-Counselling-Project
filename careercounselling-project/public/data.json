@@ -1,0 +1,131 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/0qMK6Kh/ca1.jpg",
+      "service_name": "Career Counseling Sessions",
+      "category": "Online",
+      "description": "One-on-one career counseling to help you identify your career goals and create an actionable plan.",
+      "pricing": "$50 per session",
+      "duration": "2024-12-05T17:00:00 - 2024-12-05T18:00:00",
+      "counselor": {
+        "name": "Dr. Emily Johnson",
+        "qualification": "Certified Career Coach, PhD in Psychology",
+        "experience": "10+ years in career guidance"
+      },
+      "rating": 4.8,
+      "button": "Learn More"
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/vVQyGhM/resume1.jpg",
+      "service_name": "Resume Review",
+      "category": "Offline",
+      "description": "Professional review of your resume to make it job-ready with personalized feedback and suggestions.",
+      "pricing": "$30 per review",
+      "duration": "2024-12-06T10:00:00 - 2024-12-06T12:00:00",
+      "counselor": {
+        "name": "Michael Smith",
+        "qualification": "HR Specialist, Certified Resume Writer",
+        "experience": "8+ years in recruitment and resume crafting"
+      },
+      "rating": 4.6,
+      "button": "Learn More"
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/KwhqS7B/interviewskill.png",
+      "service_name": "Group Workshop: Interview Skills",
+      "category": "Group",
+      "description": "Interactive group workshop focusing on interview techniques, body language, and common questions.",
+      "pricing": "$25 per participant",
+      "duration": "2024-12-07T15:00:00 - 2024-12-07T17:00:00",
+      "counselor": {
+        "name": "Sophia Lee",
+        "qualification": "Certified Career Consultant, MBA in HR",
+        "experience": "12+ years in career training"
+      },
+      "rating": 4.9,
+      "button": "Learn More"
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/L12Hgsb/careerstatigy.png",
+      "service_name": "Networking Strategies for Career Growth",
+      "category": "Online",
+      "description": "Learn effective networking strategies to build meaningful connections in your industry.",
+      "pricing": "$40 per session",
+      "duration": "2024-12-08T18:00:00 - 2024-12-08T19:30:00",
+      "counselor": {
+        "name": "David Clark",
+        "qualification": "Industry Mentor, Professional Networking Expert",
+        "experience": "15+ years in corporate mentorship"
+      },
+      "rating": 4.7,
+      "button": "Learn More"
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co/GnSBLV8/skillgrow.jpg",
+      "service_name": "Skill Development for Emerging Careers",
+      "category": "Online",
+      "description": "Personalized sessions to identify and develop skills for high-demand jobs in the modern workforce.",
+      "pricing": "$60 per session",
+      "duration": "2024-12-10T11:00:00 - 2024-12-10T12:30:00",
+      "counselor": {
+        "name": "Anita Kumar",
+        "qualification": "Tech Career Coach, Certified Skill Development Specialist",
+        "experience": "7+ years in upskilling programs"
+      },
+      "rating": 4.9,
+      "button": "Learn More"
+    },
+    {
+      "id": 6,
+      "image": "https://i.ibb.co/fx40q5z/carergoslsetting.jpg",
+      "service_name": "Goal Setting and Career Planning",
+      "category": "Online",
+      "description": "Detailed session to map out your career goals with clear milestones and actionable steps.",
+      "pricing": "$55 per session",
+      "duration": "2024-12-12T14:00:00 - 2024-12-12T15:30:00",
+      "counselor": {
+        "name": "Karen Davis",
+        "qualification": "Professional Career Strategist",
+        "experience": "9+ years in career planning and mentoring"
+      },
+      "rating": 4.8,
+      "button": "Learn More"
+    },
+    {
+      "id": 7,
+      "image": "https://i.ibb.co/Y3npPSV/scholarship.jpg",
+      "service_name": "Scholarship Guidance for Students",
+      "category": "Group",
+      "description": "A workshop designed for students to understand scholarship opportunities and how to apply effectively.",
+      "pricing": "$20 per participant",
+      "duration": "2024-12-13T10:00:00 - 2024-12-13T12:00:00",
+      "counselor": {
+        "name": "Amanda Brooks",
+        "qualification": "Educational Consultant, MA in Education",
+        "experience": "6+ years in student career development"
+      },
+      "rating": 4.5,
+      "button": "Learn More"
+    },
+    {
+      "id": 8,
+      "image": "https://i.ibb.co/Xzw5jHj/public.jpg",
+      "service_name": "Public Speaking for Career Success",
+      "category": "Offline",
+      "description": "Learn essential public speaking skills to boost your confidence and make an impact in your career.",
+      "pricing": "$45 per session",
+      "duration": "2024-12-14T16:00:00 - 2024-12-14T18:00:00",
+      "counselor": {
+        "name": "Robert Adams",
+        "qualification": "Public Speaking Coach, Certified Toastmaster",
+        "experience": "10+ years in communication training"
+      },
+      "rating": 4.9,
+      "button": "Learn More"
+    }
+  ]
+  
