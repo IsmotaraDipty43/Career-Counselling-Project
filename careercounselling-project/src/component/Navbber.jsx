@@ -27,7 +27,7 @@ const Navbber = () => {
       </div>
       <ul
         tabIndex={0}
-        className="menu menu-sm dropdown-content  rounded-box z-[1] mt-3 w-52 p-2 bg-base-300 text-black shadow">
+        className="menu menu-sm dropdown-content  rounded-box z-[1] mt-3 w-52 p-2 bg-black text-black shadow">
           <NavLink
   className={({ isActive }) => 
     `text-lg font-semibold ${isActive ? 'text-orange-500' : 'text-white'}`
