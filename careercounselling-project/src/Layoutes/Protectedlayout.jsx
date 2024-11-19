@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'; // Import useState
+import React, { useContext, useState } from 'react'; 
 import { useLoaderData, useParams } from 'react-router-dom';
 import { Authcontext } from '../Provider/AuthProvider';
 import Navbber from '../component/Navbber';
@@ -10,28 +10,28 @@ import self from '../assets/care.png'
 
 const Protectedlayout = () => {
     const { id } = useParams();
-    const idd = parseInt(id);  // Get the dynamic ID from the URL
-    const ServiceData = useLoaderData(); // Fetch data using useLoaderData
-    const service = ServiceData?.find(service => service.id === idd);  // Find the service by id (add optional chaining)
+    const idd = parseInt(id);  
+    const ServiceData = useLoaderData(); 
+    const service = ServiceData?.find(service => service.id === idd); 
     
-    const [comment, setComment] = useState('');  // Initialize state for comment
-    const [commentsList, setCommentsList] = useState([]);  // Initialize state for list of comments
+    const [comment, setComment] = useState(''); 
+    const [commentsList, setCommentsList] = useState([]);  
 
-    const { user } = useContext(Authcontext); // Fetch user from context
+    const { user } = useContext(Authcontext); 
 
-    // Fallback for user name if not logged in
-    const userName = user?.displayName || 'Anonymous'; // Default to 'Anonymous' if user is not logged in
+   
+    const userName = user?.displayName || 'Anonymous'; 
 
     const handleCommentChange = (e) => {
-        setComment(e.target.value);  // Update comment state
+        setComment(e.target.value);  
     };
 
     const handleCommentSubmit = () => {
         if (comment.trim()) {
-            // Add the new comment with user name to the comments list
+         
             setCommentsList(prevComments => [
                 ...prevComments, 
-                { user: userName, text: comment }  // Store comment along with the user's name
+                { user: userName, text: comment }  
             ]);
             setComment(''); 
             console.log("Feedback submitted:", comment);
