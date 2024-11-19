@@ -16,6 +16,14 @@
   - Option to view detailed service data.
   - Access to available course information for career development.
 
+- **Modern and Responsive Design**:
+  - Fully responsive design for seamless usage on any device.
+  - Clean and intuitive user interface.
+
+- **Secure and Scalable**:
+  - Powered by Firebase for authentication and database management.
+  - Implements best practices for secure and scalable web applications.
+
 ## Technologies Used
 
 - **Firebase**: Backend as a Service (BaaS) for authentication and database management.
@@ -25,7 +33,3 @@
 ## Live Demo
 
 [Career Pathway Live](https://carrer-counselling-6b05c.web.app/)
-
----
-
-
