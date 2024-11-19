@@ -33,7 +33,7 @@ const Protectedlayout = () => {
                 ...prevComments, 
                 { user: userName, text: comment }  // Store comment along with the user's name
             ]);
-            setComment(''); // Clear the comment input field
+            setComment(''); 
             console.log("Feedback submitted:", comment);
         } else {
             console.log("Comment cannot be empty.");
@@ -41,11 +41,11 @@ const Protectedlayout = () => {
     };
 
     if (!ServiceData) {
-        return <div>Loading...</div>;  // Show loading until data is fetched
+        return <div>Loading...</div>; 
     }
 
     if (!service) {
-        return <div>Service not found</div>;  // If no service is found for the given ID
+        return <div>Service not found</div>;  
     }
 
     return (

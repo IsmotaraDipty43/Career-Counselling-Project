@@ -3,8 +3,8 @@ import { Authcontext } from '../Provider/AuthProvider';
 import { useContext, useState } from 'react';
 import Navbber from './Navbber';
 import Footer from './Footer';
-import { toast, ToastContainer } from 'react-toastify'; // Correct import
-import 'react-toastify/dist/ReactToastify.css'; // Import styles for Toastify
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; 
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 
@@ -30,7 +30,7 @@ const handlegoolesing =()=>{
         const email = form.email.value;
         const pass = form.password.value;
 
-        // Validate input fields
+      
         if (name.length < 5) {
             setError({ ...error, name: "Name must be at least 5 characters" });
             toast.error("Name must be at least 5 characters");
@@ -43,7 +43,7 @@ const handlegoolesing =()=>{
             return;
         }
 
-        // Validate password
+   
         const hasUppercase = /[A-Z]/.test(pass);
         const hasLowercase = /[a-z]/.test(pass);
         const hasValidLength = pass.length >= 6;
@@ -57,7 +57,7 @@ const handlegoolesing =()=>{
             return;
         }
 
-        // Proceed with user creation
+ 
         createnewUser(email, pass)
             .then((result) => {
                 const user = result.user;
@@ -85,7 +85,7 @@ const handlegoolesing =()=>{
                 <div className="card bg-base-100 w-full max-w-lg shrink-0 rounded-none p-10">
                     <h2 className='text-2xl font-semibold text-center'>Register your account</h2>
                     <form className="card-body" onSubmit={handleSubmit}>
-                        {/* Name Field */}
+                      
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Name</span>
