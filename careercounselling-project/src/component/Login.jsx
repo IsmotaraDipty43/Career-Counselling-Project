@@ -4,7 +4,7 @@ import Navbber from './Navbber';
 import { Authcontext } from '../Provider/AuthProvider';
 import { Link, useLocation, useNavigate, NavLink } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css'; // Import toast styles
+import 'react-toastify/dist/ReactToastify.css'; 
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 const Login = () => {
@@ -29,7 +29,7 @@ const handleGooglesign=()=>{
               const user = result.user;
               setUser(user);
               form.reset();
-              // Show success toast after successful login
+        
               toast.success('Login successful! Redirecting...', {
                   position: 'top-right',
                   autoClose: 2000,
@@ -39,7 +39,7 @@ const handleGooglesign=()=>{
               }, 1000); 
           })
           .catch((err) => {
-              // Clear any existing error before showing a new one
+         
               setError({ ...error, login: err.code });
             
           });
@@ -69,12 +69,12 @@ const handleGooglesign=()=>{
 
                         {/* Password Input */}
                      
-<div className="mt-4 relative"> {/* Added `relative` to the parent container */}
+<div className="mt-4 relative">
     <label htmlFor="password" className="block text-sm font-medium text-gray-700">
         Password
     </label>
     <input
-        type={showpass ? "text" : "password"} // Toggles between text and password based on `showpass`
+        type={showpass ? "text" : "password"} 
         id="password"
         name="password"
         placeholder="Enter your password"
@@ -93,7 +93,7 @@ const handleGooglesign=()=>{
     <button
         type="button"
         className="absolute bg-transparent border-none right-4 top-10"
-        onClick={() => setShowPass(!showpass)} // Toggles the `showpass` state
+        onClick={() => setShowPass(!showpass)}
     >
         {showpass ? <FaEyeSlash /> : <FaEye />}
     </button>
