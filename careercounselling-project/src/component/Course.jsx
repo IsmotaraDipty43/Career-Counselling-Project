@@ -3,12 +3,17 @@ import Navbber from './Navbber';
 import Footer from './Footer';
 import { useLoaderData } from 'react-router-dom';
 import CourseCard from './CourseCard';
-
+import {Helmet} from "react-helmet";
 const Course = () => {
     const courses = useLoaderData()
     
     return (
         <div>
+             <Helmet>
+              
+              <title>Career Pathway || Course</title>
+             
+          </Helmet>
             <Navbber></Navbber>
            <section className='md:w-10/12 w-full  mx-auto'>
          <div className='mt-10 mb-10'>
