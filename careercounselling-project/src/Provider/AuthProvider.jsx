@@ -1,6 +1,6 @@
 import React, { createContext, useEffect, useState } from 'react';
 import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut, updateProfile, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
-import { toast } from 'react-toastify'; // Make sure toast is imported
+import { toast } from 'react-toastify'; 
 import 'react-toastify/dist/ReactToastify.css';
 import app from '../Firebase/firebase.config';
 
@@ -32,7 +32,7 @@ const logOut=()=>{
       return updateProfile(auth.currentUser, updateData)
  }
 
- // Google Sign-up / Sign-in functionality
+
  const provider = new GoogleAuthProvider();
 
  const handleGoogleSignup = () => {
@@ -50,11 +50,11 @@ const logOut=()=>{
          });
  };
  const updateCurrentUserProfile = async (updateData) => {
-    // Make sure this function updates the user profile in your system (e.g., Firebase, API call)
+
     try {
       // Assuming Firebase
       await firebase.auth().currentUser.updateProfile(updateData);
-      setUser({ ...user, ...updateData }); // Update user state after successful update
+      setUser({ ...user, ...updateData }); 
     } catch (error) {
       throw error;
     }

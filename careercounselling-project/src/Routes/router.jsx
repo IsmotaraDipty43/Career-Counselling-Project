@@ -35,7 +35,7 @@ import ForgetPassword from '../component/ForgetPassword';
       element: <Login></Login>
     },
     {
-      path: "/reg", // Add this route
+      path: "/reg", 
       element: <Register></Register>,
     },
     {
@@ -45,7 +45,7 @@ import ForgetPassword from '../component/ForgetPassword';
 
     },
     {
-      path: "/course", // Add this route
+      path: "/course", 
       element:<PrivatRoutes><Course></Course></PrivatRoutes>,
       loader:()=>fetch('/course.json')
     },
