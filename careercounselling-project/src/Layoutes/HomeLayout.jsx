@@ -6,9 +6,15 @@ import { Outlet } from 'react-router-dom';
 import MeetExpert from '../component/MeetExpert';
 import Client from '../component/Client';
 import Footer from '../component/Footer';
+import {Helmet} from "react-helmet";
 const HomeLayout = () => {
     return (
         <div>
+             <Helmet>
+              
+                <title>Career Pathway || Home</title>
+               
+            </Helmet>
             <Navbber></Navbber>
             <Banner></Banner>
             <Slider></Slider>

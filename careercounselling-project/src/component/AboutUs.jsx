@@ -2,9 +2,15 @@ import React from 'react';
 import about from '../assets/about.jpg'
 import Footer from '../component/Footer';
 import Navbber from '../component/Navbber';
+import {Helmet} from "react-helmet";
 const AboutUs = () => {
     return (
         <div>
+             <Helmet>
+              
+              <title>Career Pathway || About</title>
+             
+          </Helmet>
             <Navbber></Navbber>
             <div className="mt-10 lg:mt-20 mb-10 px-4 lg:px-20">
           <h1 className="text-3xl lg:text-4xl font-bold text-center text-[#2d524b]">
