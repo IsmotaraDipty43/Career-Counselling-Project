@@ -16,7 +16,7 @@ const Slider = () => {
         <div className="relative w-10/12 mx-auto mt-10 mb-10 md:mt-20 md:mb-20">
             <h1 className='mb-10 text-[#2d524b] font-bold text-center md:text-3xl text-2xl lg:text-4xl'>Inspiring Visuals for Your Journey</h1>
             <Swiper
-                modules={[Navigation, Pagination, Autoplay]} // Register modules
+                modules={[Navigation, Pagination, Autoplay]} 
                 spaceBetween={50}
                 slidesPerView={1}
                 loop={true}
@@ -29,7 +29,7 @@ const Slider = () => {
                         <img 
                             src={slide} 
                             alt={`Slide ${index + 1}`} 
-                            className="w-full object-cover rounded-xl" // Ensure consistent height and cropping
+                            className="w-full object-cover rounded-xl" 
                         />
                     </SwiperSlide>
                 ))}

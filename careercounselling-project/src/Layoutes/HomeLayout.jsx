@@ -15,6 +15,7 @@ const HomeLayout = () => {
                 <title>Career Pathway || Home</title>
                
             </Helmet>
+            
             <Navbber></Navbber>
             <Banner></Banner>
             <Slider></Slider>

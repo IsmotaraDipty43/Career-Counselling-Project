@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import { Authcontext } from '../Provider/AuthProvider';
 import Navbber from './Navbber';
 import Footer from './Footer';
-
+import {Helmet} from "react-helmet";
 const MyProfile = () => {
   const { user,  updateCurrentUserProfile } = useContext(Authcontext);
   const [displayName, setDisplayName] = useState(user?.displayName || '');
@@ -48,6 +48,11 @@ const MyProfile = () => {
 
   return (
    <>
+       <Helmet>
+              
+              <title>Career Pathway || Profile</title>
+             
+          </Helmet>
    <Navbber></Navbber>
   <div className='w-full min-h-screen  md:w-10/12 mx-auto justify-center items-center'>
   <div className="p-4 mt-10 mb-10 ">

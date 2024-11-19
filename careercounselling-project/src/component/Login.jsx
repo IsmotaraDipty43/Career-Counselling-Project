@@ -6,7 +6,7 @@ import { Link, useLocation, useNavigate, NavLink } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'; 
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
-
+import {Helmet} from "react-helmet";
 const Login = () => {
   const [showpass, setShowPass] = useState(false);
     const { user,userLogin, setUser,handleGoogleSignup } = useContext(Authcontext);
@@ -48,6 +48,11 @@ const handleGooglesign=()=>{
 
     return (
         <div>
+             <Helmet>
+              
+              <title>Career Pathway || login</title>
+             
+          </Helmet>
             <Navbber />
             <div className="min-h-screen flex items-center justify-center bg-gray-100">
                 <div className="w-full max-w-md bg-white rounded-lg shadow-md p-8">

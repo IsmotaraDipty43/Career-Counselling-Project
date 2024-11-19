@@ -6,7 +6,7 @@ import Footer from './Footer';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'; 
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
-
+import {Helmet} from "react-helmet";
 
 const Register = () => {
     const { createnewUser, setUser, updateUserProfile,handleGoogleSignup , auth } = useContext(Authcontext); 
@@ -80,6 +80,11 @@ const handlegoolesing =()=>{
 
     return (
         <div>
+             <Helmet>
+              
+              <title>Career Pathway || Register</title>
+             
+          </Helmet>
             <Navbber />
             <div className='min-h-screen justify-center items-center flex'>
                 <div className="card bg-base-100 w-full max-w-lg shrink-0 rounded-none p-10">

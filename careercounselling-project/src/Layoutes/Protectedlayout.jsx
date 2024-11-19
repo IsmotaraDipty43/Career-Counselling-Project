@@ -7,7 +7,7 @@ import mental from '../assets/mental.png'
 import well from '../assets/well.png'
 import medi from '../assets/meditation (2).png'
 import self from '../assets/care.png'
-
+import {Helmet} from "react-helmet";
 const Protectedlayout = () => {
     const { id } = useParams();
     const idd = parseInt(id);  
@@ -50,6 +50,11 @@ const Protectedlayout = () => {
 
     return (
         <div>
+                <Helmet>
+              
+              <title>Career Pathway || ServiceDetails</title>
+             
+          </Helmet>
             <Navbber></Navbber>
             <div className="flex justify-center items-center min-h-screen  mt-5 mb-5">
             <div className="md:w-8/12 w-full  grid  bg-gray-50 p-6 rounded-lg shadow-lg">
