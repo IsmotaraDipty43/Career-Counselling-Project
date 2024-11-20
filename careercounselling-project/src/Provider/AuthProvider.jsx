@@ -50,15 +50,31 @@ const logOut=()=>{
          });
  };
  const updateCurrentUserProfile = async (updateData) => {
+    if (!auth.currentUser) {
+        throw new Error("No user is currently logged in!");
+    }
 
     try {
-      // Assuming Firebase
-      await firebase.auth().currentUser.updateProfile(updateData);
-      setUser({ ...user, ...updateData }); 
+        await updateProfile(auth.currentUser, {
+            displayName: updateData.displayName || auth.currentUser.displayName,
+            photoURL: updateData.photoURL || auth.currentUser.photoURL,
+        });
+
+        // Update the local user state
+        setUser({
+            ...auth.currentUser,
+            displayName: updateData.displayName || auth.currentUser.displayName,
+            photoURL: updateData.photoURL || auth.currentUser.photoURL,
+        });
+
+        toast.success("Profile updated successfully!");
     } catch (error) {
-      throw error;
+        console.error("Error updating profile:", error);
+        toast.error("Failed to update profile.");
+        throw error;
     }
-  };
+};
+
 
     const authinfo = {
         user,

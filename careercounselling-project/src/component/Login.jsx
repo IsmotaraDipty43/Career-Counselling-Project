@@ -25,25 +25,30 @@ const handleGooglesign=()=>{
       const password = form.password.value;
   
       userLogin(email, password)
-          .then((result) => {
-              const user = result.user;
-              setUser(user);
-              form.reset();
-        
-              toast.success('Login successful! Redirecting...', {
-                  position: 'top-right',
-                  autoClose: 2000,
-              });
-              setTimeout(() => {
-                  navigate('/');
-              }, 1000); 
-          })
-          .catch((err) => {
-         
-              setError({ ...error, login: err.code });
-            
-          });
-  };
+    .then((result) => {
+        const user = result.user;
+        setUser(user);
+        form.reset();
+
+        toast.success('Login successful! Redirecting...', {
+            position: 'top-right',
+            autoClose: 2000,
+        });
+
+        setTimeout(() => {
+            navigate('/');
+        }, 1000); 
+    })
+    .catch((err) => {
+        setError({ ...error, login: err.code });
+
+        toast.error('Login failed. Please check your credentials.', {
+            position: 'top-right',
+            autoClose: 2000,
+        });
+    });
+};
+
   
 
     return (
