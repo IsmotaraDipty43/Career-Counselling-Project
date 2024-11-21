@@ -3,18 +3,20 @@ import { Authcontext } from "../Provider/AuthProvider";
 import Navbber from "./Navbber";
 import Footer from "./Footer";
 import { Helmet } from "react-helmet";
-
+import { useNavigate } from "react-router-dom";
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; 
 const MyProfile = () => {
   const { user, updateCurrentUserProfile } = useContext(Authcontext);
   const [displayName, setDisplayName] = useState(user?.displayName || "");
   const [photoURL, setPhotoURL] = useState(user?.photoURL || "");
   const [loading, setLoading] = useState(false);
-
+const navigate = useNavigate()
   // Update displayName and photoURL state when user changes
   useEffect(() => {
     if (user) {
-      setDisplayName(user.displayName || "");
-      setPhotoURL(user.photoURL || "");
+      setDisplayName(user.displayName || navigate('/login'));
+      setPhotoURL(user.photoURL || navigate('/login'));
     }
   }, [user]);
 
@@ -23,7 +25,7 @@ const MyProfile = () => {
 
     // Check if at least one field is provided
     if (!displayName && !photoURL) {
-      alert("Please provide at least one field to update.");
+      toast.error("Please provide at least one field to update.");
       return;
     }
 
@@ -36,11 +38,11 @@ const MyProfile = () => {
 
     updateCurrentUserProfile(updateData)
       .then(() => {
-        alert("Profile updated successfully!");
+        toast.success("Profile Update successful!");
       })
       .catch((error) => {
-        console.error("Error updating profile:", error);
-        alert(`Failed to update profile: ${error.message}`);
+     
+        toast.error(`Failed to update profile: ${error.message}`);
       })
       .finally(() => {
         setLoading(false);
@@ -112,6 +114,7 @@ const MyProfile = () => {
         </div>
       </div>
       <Footer />
+      <ToastContainer autoClose={4000} />
     </>
   );
 };

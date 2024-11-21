@@ -56,6 +56,11 @@ const handlegoolesing =()=>{
             toast.error("Invalid password format");
             return;
         }
+ 
+        toast.success("Registration successful!");
+   
+        form.reset();
+
 
  
         createnewUser(email, pass)
@@ -65,7 +70,7 @@ const handlegoolesing =()=>{
                 updateUserProfile({ displayName: name, photoURL: photo })
                     .then(() => {
                         toast.success("User successfully registered!");
-                        navigate('/login');
+                        navigate('/');
                     })
                     .catch((error) => {
                         console.error("Error updating profile:", error);

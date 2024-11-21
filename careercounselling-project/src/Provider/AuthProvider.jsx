@@ -74,7 +74,8 @@ const logOut=()=>{
         throw error;
     }
 };
-
+;
+  
 
     const authinfo = {
         user,
@@ -85,7 +86,8 @@ const logOut=()=>{
         updateUserProfile ,
         userLogin,
         handleGoogleSignup,
-        updateCurrentUserProfile
+        updateCurrentUserProfile,
+   
     };
  
 

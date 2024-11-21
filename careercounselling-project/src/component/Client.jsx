@@ -16,12 +16,12 @@ import client4 from '../assets/client4.jpg';
 
 const Client = () => {
     return (
-        <div className='w-full relative h-[1120px] md:h-[900px] mt-10 mb-10'>
+        <div className='w-full relative h-[1230px] md:h-[900px] mt-10 mb-10'>
             <h1 className='text-center  font-bold text-[#2d524b] text-2xl md:text-3xl  lg:text-4xl mb-5'>What's Our Clients Say</h1>
           <div className="w-full  h-[200px] md:h-[300px] lg:h-[600px] relative bg-cover bg-center" style={{ backgroundImage: `url(${client})` }}>
  
 </div>
-<div className='md:w-2/3 w-full p-2   h-[500px] left-[300px] absolute bg-transparent top-[530px] hidden lg:block'>
+<div className='md:w-2/3 w-full p-2  h-[500px] left-[300px] absolute bg-transparent top-[530px] hidden lg:block'>
 <Swiper
         modules={[Navigation, Pagination]}
         spaceBetween={30}
