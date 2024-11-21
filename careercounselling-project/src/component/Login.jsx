@@ -17,7 +17,6 @@ const Login = () => {
 
   const handleGooglesign = () => {
     handleGoogleSignup();
-    toast.success('Login successful! Redirecting...')
     navigate('/');
   }
 
