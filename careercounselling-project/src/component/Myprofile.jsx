@@ -114,7 +114,7 @@ const navigate = useNavigate()
         </div>
       </div>
       <Footer />
-      <ToastContainer autoClose={4000} />
+      <ToastContainer />
     </>
   );
 };
