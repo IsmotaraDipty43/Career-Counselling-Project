@@ -42,7 +42,7 @@ const logOut=()=>{
             //  console.log("User signed in with Google:", result.user);
              setUser(result.user);
            
-             toast.success("Signed up with Google successfully!");
+         
          })
          .catch((error) => {
             //  console.error("Error signing in with Google:", error);

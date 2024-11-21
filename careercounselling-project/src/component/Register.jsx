@@ -211,7 +211,7 @@ const handlegoolesing =()=>{
                 </div>
             </div>
             <Footer />
-            <ToastContainer autoClose={5000} />
+            <ToastContainer autoClose={4000} />
         </div>
     );
 };

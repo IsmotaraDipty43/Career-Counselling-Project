@@ -16,7 +16,7 @@ import client4 from '../assets/client4.jpg';
 
 const Client = () => {
     return (
-        <div className='w-full relative h-[1120px] md:h-[900px] mt-10 mb-10'>
+        <div className='w-full relative h-[11200px] md:h-[900px] mt-10 mb-10'>
             <h1 className='text-center  font-bold text-[#2d524b] text-2xl md:text-3xl  lg:text-4xl mb-5'>What's Our Clients Say</h1>
           <div className="w-full  h-[200px] md:h-[300px] lg:h-[600px] relative bg-cover bg-center" style={{ backgroundImage: `url(${client})` }}>
  
@@ -152,7 +152,7 @@ const Client = () => {
 
 
 
-<div className='lg:hidden grid grid-cols-1 md:grid-cols-2 gap-5 mt-10 '>
+<div className='lg:hidden grid grid-cols-1 md:grid-cols-2 p- gap-5 mt-10 '>
 <div className="bg-white shadow-lg rounded-xl p-6 flex flex-col border">
     <div className="flex justify-center items-center">
       <img
