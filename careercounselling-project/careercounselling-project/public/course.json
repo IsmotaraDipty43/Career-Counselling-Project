@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Career Counseling 101",
+    "description": "An introductory course designed to help individuals explore various career paths and set achievable goals.",
+    "duration": "6 weeks",
+    "level": "Beginner",
+    "relatedTopics": ["Goal Setting", "Self-Assessment", "Career Planning"],
+    "image": "https://i.ibb.co.com/NTZzRHs/career1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Building a Winning Resume",
+    "description": "Learn how to craft a resume that stands out to employers and showcases your unique skills.",
+    "duration": "4 weeks",
+    "level": "Intermediate",
+    "relatedTopics": ["Resume Writing", "Job Applications", "Professional Branding"],
+    "image": "https://i.ibb.co.com/hcZG1dF/resume.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Academic Pathways for Career Success",
+    "description": "Understand how to align academic choices with long-term career goals.",
+    "duration": "8 weeks",
+    "level": "Beginner",
+    "relatedTopics": ["Education Planning", "Career Alignment", "Skill Development"],
+    "image": "https://i.ibb.co.com/pQNGRZ9/sucess.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Effective Networking Strategies",
+    "description": "Discover how to build and maintain professional relationships that can advance your career.",
+    "duration": "5 weeks",
+    "level": "Advanced",
+    "relatedTopics": ["Networking", "Personal Branding", "Career Growth"],
+    "image": "https://i.ibb.co.com/vswgys3/networking.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Soft Skills for Career Development",
+    "description": "Master essential soft skills such as communication, teamwork, and problem-solving for workplace success.",
+    "duration": "6 weeks",
+    "level": "Beginner",
+    "relatedTopics": ["Communication", "Teamwork", "Leadership"],
+    "image": "https://i.ibb.co.com/7CCfMXZ/soft.png"
+  },
+  {
+    "id": 6,
+    "title": "Introduction to Psychometric Assessments",
+    "description": "Learn how psychometric tests can help identify strengths and career preferences.",
+    "duration": "3 weeks",
+    "level": "Intermediate",
+    "relatedTopics": ["Psychometric Testing", "Self-Discovery", "Career Choices"],
+    "image": "https://i.ibb.co.com/61LW8w0/py.jpg"
+  }
+]

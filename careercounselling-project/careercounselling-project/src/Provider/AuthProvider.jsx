@@ -45,7 +45,7 @@ const logOut=()=>{
              toast.success("Signed up with Google successfully!");
          })
          .catch((error) => {
-            //  console.error("Error signing in with Google:", error);
+             console.error("Error signing in with Google:", error);
              toast.error("Google Sign-In failed");
          });
  };
@@ -69,7 +69,7 @@ const logOut=()=>{
 
         toast.success("Profile updated successfully!");
     } catch (error) {
-        // console.error("Error updating profile:", error);
+        console.error("Error updating profile:", error);
         toast.error("Failed to update profile.");
         throw error;
     }
