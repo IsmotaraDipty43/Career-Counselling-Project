@@ -4,25 +4,37 @@
 
 ## Features
 
-- **Login and Registration**:
-  - Users can create an account or log in with their credentials.
-  - Integration with Google Authentication for quick and secure login.
+1. **Login and Registration**:
+   - Users can create an account or log in with their credentials.
+   - Integration with Google Authentication for quick and secure login.
 
-- **User Profile Management**:
-  - Users can update their profile information.
-  - Includes a "Forgot Password" feature for account recovery.
+2. **User Profile Management**:
+   - Users can update their profile information.
+   - Includes a "Forgot Password" feature for account recovery.
 
-- **Service and Course Information**:
-  - Option to view detailed service data.
-  - Access to available course information for career development.
+3. **Service and Course Information**:
+   - Option to view detailed service data.
+   - Access to available course information for career development.
 
-- **Modern and Responsive Design**:
-  - Fully responsive design for seamless usage on any device.
-  - Clean and intuitive user interface.
+4. **Career Pathway Recommendations**:
+   - Personalized career recommendations based on the user’s profile and preferences.
+   - Suggest relevant courses, skills, and opportunities based on the user’s career goals.
 
-- **Secure and Scalable**:
-  - Powered by Firebase for authentication and database management.
-  - Implements best practices for secure and scalable web applications.
+5. **Job Listings and Opportunities**:
+   - Display the latest job openings and career opportunities.
+   - Users can filter job listings based on their field of interest and location.
+
+6. **Interactive Resume Builder**:
+   - Users can create and update their resumes with a simple, step-by-step interface.
+   - Option to export the resume as a PDF.
+
+7. **Modern and Responsive Design**:
+   - Fully responsive design for seamless usage on any device.
+   - Clean and intuitive user interface.
+
+8. **Secure and Scalable**:
+   - Powered by Firebase for authentication and database management.
+   - Implements best practices for secure and scalable web applications.
 
 ## Technologies Used
 
