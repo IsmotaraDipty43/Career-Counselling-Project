@@ -38,7 +38,7 @@
 Follow these steps to set up and run the project on your local machine using **VS Code**.
 
 1️⃣ **Clone the Repository**  
-   git clone https://github.com/your-username/book-a-tutor.git  
+   git clone https://github.com/IsmotaraDipty43/Career-Counselling-Project.git  
 
 2️⃣ **Navigate to the Project Folder**  
    cd careercounselling-project  
@@ -58,7 +58,7 @@ Follow these steps to set up and run the project on your local machine using **V
 ## 📦 Dependencies Used  
 Below are the key dependencies used in this project:  
 
-json
+```json
 {
   "dependencies": {
     "react": "^18.2.0",
